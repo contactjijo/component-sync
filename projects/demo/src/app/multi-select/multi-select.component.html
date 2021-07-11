@@ -1,0 +1,14 @@
+<div *ngIf="_value?.defaultArray ">
+  <div class="form-check"
+       *ngFor="let item of _value?.defaultArray ">
+    <input class="form-check-input"
+           type="checkbox"
+           value="1"
+           (click)="handleClick(item)"
+           id="flexCheckDefault">
+    <label class="form-check-label"
+           for="flexCheckDefault">
+      {{ item }}
+    </label>
+  </div>
+</div>

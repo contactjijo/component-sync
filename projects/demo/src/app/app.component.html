@@ -1,0 +1,25 @@
+<div class="container my-5">
+  <form class="container"
+        [formGroup]="form">
+    <div class="row text-center">
+
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+        <app-multi-select formControlName="one"
+                          [(ngModel)]="initialAValue"></app-multi-select>
+      </div>
+
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+        <button type="button"
+                class="btn btn-primary my-5"
+                (click)="onSubmit()">Sync</button>
+      </div>
+
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+        <app-multi-select formControlName="two"
+                          [(ngModel)]="initialBValue"></app-multi-select>
+      </div>
+
+    </div>
+  </form>
+
+</div>
